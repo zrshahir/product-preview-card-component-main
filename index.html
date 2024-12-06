@@ -61,7 +61,7 @@
       font-weight: 700; 
       font-size: 15px; 
       text-align: center; 
-      margin-left: 550px; 
+      margin-left: 550px;  
     }
     .line2 div {
       font-size: 14px; 
@@ -69,30 +69,78 @@
       margin-left: 550px; 
       font-weight: 500;  
     }
+    .line1, .line2 {
+      text-align: center;
+    }
+    .perfume-name1 {
+      position: relative; 
+      left: 550px; 
+    }
+    .perfume-name2 {
+      position: relative; 
+      left: 538px;
+    }
+    .paragraph1, .paragraph2, .paragraph3, .paragraph4 {
+      position: relative; 
+    }
+    .paragraph1 {
+      left: 550px;
+    }
+    .paragraph2 {
+      left: 550px;
+    }
+    .paragraph3 {
+      left: 550px; 
+    }
+    .paragraph4 { 
+      left: 550px; 
+    }
+    @media only screen and (max-width: 900px) {
+      .perfume {
+        float: left; 
+        position: relative; 
+        right: 690px; 
+      }
+      h1, h2, h3, .perfume-name1, .perfume-name2, .paragraph1, .paragraph2, .paragraph3, .paragraph4, .cart, .cart-button  {
+        float: right; 
+        position: relative; 
+      }
+      h1 {
+        left: 600px; 
+        bottom: 500px;
+      }
+      .perfume-name1, .perfume-name2, .paragraph1, .paragraph2, .paragraph3, .paragraph4 {
+        left: 600px;
+        bottom: 500px; 
+      }
+      h2, h3, .cart, .cart-button {
+        left: 600px;
+      }
+    }
   </style>
 </head>
 <body>
 <div class="little-card">
-  <img src="images/image-product-mobile.jpg">
+  <img src="images/image-product-mobile.jpg" class="perfume">
   <h1>PERFUME</h1>
   <div class="line1">
-  <div>Gabrielle Essence</div>
+  <p class="perfume-name1">Gabrielle Essence</p>
   <br/>
-  <div>Eau De Parfum</div>
+  <p class="perfume-name2">Eau De Parfum</p>
   </div>
   <div class="line2">
-  <div>A floral, solar and voluptuous</div>
+  <p class="paragraph1">A floral, solar and voluptuous</p>
   <br/>
-  <div>interpretation composed by Olivier</div>
+  <p class="paragraph2">interpretation composed by Olivier</p>
   <br/>
-  <div>Polge, Perfumer-Creator for the House of</div>
+  <p class="paragraph3">Polge, Perfumer-Creator for the House of</p>
   <br/>
-  <div>CHANEL.</div>
+  <p class="paragraph4">CHANEL.</p>
   </div>
   <h2>$149.99</h2>
   <h3>$169.99</h3>
-  <img src="images/icon-cart.svg">
-  <button>Add to Cart</button>
+  <img src="images/icon-cart.svg" class="cart">
+  <button class="cart-button">Add to Cart</button>
   </div>
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
@@ -100,6 +148,44 @@
   </div>
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
